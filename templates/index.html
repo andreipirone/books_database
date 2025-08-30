@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block button %}
+    <a href="{{ url_for('create')}}"><button type="button" class="btn btn-dark" id="button-nav">Nou</button></a>
+{% endblock %}
+
+{% block body %}
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Titlu</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Editură</th>
+            <th scope="col">Editare</th>
+            <th scope="col">Ștergere</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in lista %}
+            <tr>
+                    <th scope="row">{{i[1]}}</th>
+                    <th>{{i[3]}}</th>
+                    <th>{{i[2]}}</th>
+                    <th><a class="text-warning" href="{{ url_for('edit', id=i[0])}}">EDITEAZĂ</a></th>
+                    <th><a class="text-danger" href="{{ url_for('delete',id=i[0]) }}">ȘTERGE</a></th>
+            </tr>   
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

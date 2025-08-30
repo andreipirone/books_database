@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="shortcut icon" type="image/png" href="static/agenda.png"/>
+    <title>Listă de cărți</title>
+</head>
+
+<body>
+    <div class="container">
+        {% block button %}{% endblock %}
+        {% block body %}{% endblock %}
+    </div>
+    
+        
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block button %}
+    <a href="{{ url_for('index')}}"><button type="button" class="btn btn-dark" id="button-nav">Înapoi</button></a>
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('generate')}}" method="post" enctype="multipart/form-data">
+<form>
+    <div class="form-group">
+        <label for="titlu" class="font-weight-bold">Titlu</label>
+        <input type="text" id="titlu" name="titlu" class="form-control" >
+    </div>
+
+    <div class="form-group">
+        <label for="autor" class="font-weight-bold">Autor</label>
+        <input type="text" id="autor" name="autor" class="form-control" >
+    </div>
+
+    <div class="form-group">
+        <label for="editura" class="font-weight-bold">Editură</label>
+        <input type="text" id="editura" name="editura" class="form-control" >
+    </div>
+    <button type="submit" class="btn btn-primary">Adaugă Carte</button>
+</form>
+{% endblock %}
+
+
+
