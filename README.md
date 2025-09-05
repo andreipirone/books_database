@@ -1,4 +1,4 @@
-# Biblioteca de Cărți - Flask App
+# Book Database Management Flask App
 
 A simple web application for managing a book library, built with Flask and SQLite.
 
