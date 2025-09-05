@@ -1,6 +1,6 @@
 # Book Database Management App
 
-A simple web application for managing a book library, built with Flask and SQLite.
+A simple CRUD web application for managing a book library, built with Flask and SQLite.
 
 ## Installation
 
